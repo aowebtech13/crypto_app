@@ -1,0 +1,49 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ddd;
+    padding: 20px 10%;
+    border-bottom: 2px solid #3c3c3c ;
+}
+.logo{
+    height: 45px;
+    width: 125px;
+    
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.navbar select{
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    padding: 5px 8px;
+    ;
+}
+.navbar option{
+    background-color: #09005c;
+    color: white;
+}
+.navbar button{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #393939;
+    background: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.7s ease-in-out;
+    
+}
+.navbar .login-icon{
+    height: 12px;
+    width: 12px;
+    fill: #393939;
+}
