@@ -47,3 +47,25 @@
     width: 12px;
     fill: #393939;
 }
+@media (max-width: 900px){
+    .navbar{
+        padding: 20px 8%;
+    }
+    .navbar button{
+        padding: 10px 20px;
+        font-size: 13px;
+        gap: 5px;
+    }
+}
+@media (max-width: 768px){
+    .navbar{
+        padding: 20px 5%;
+    }
+    .navbar ul{
+        display: none;
+    }
+    .navbar button{
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+}

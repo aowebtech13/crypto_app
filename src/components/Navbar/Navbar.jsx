@@ -10,21 +10,21 @@ const Navbar = () => {
   
   const {setCurrency} = useContext(CoinContext); 
   const currencyHandler = (event) => {
-    switch (event.target.value){
+    switch (event.target.value) {
       case 'usd':
-        setCurrency('usd');
+        setCurrency({ name: 'usd', symbol: '$', sign: 'USD' });
         break;
       case 'eur':
-        setCurrency('eur');
+        setCurrency({ name: 'eur', symbol: '€', sign: 'EUR' });
         break;
       case 'inr':
-        setCurrency('inr');
+        setCurrency({ name: 'inr', symbol: '₹', sign: 'INR' });
         break;
       default:
-        setCurrency('usd');
+        setCurrency({ name: 'usd', symbol: '$', sign: 'USD' });
     }
-
-  }
+  };
+  
   return (
     <div className='navbar'>
             <img src={logo} alt='Logo' className='logo' />

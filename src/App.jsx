@@ -3,6 +3,7 @@ import Navbar from './components/Navbar/Navbar'
 import { Route,Routes } from 'react-router-dom'
 import Home from './assets/pages/Home/Home'
 import Coin from './assets/pages/Coin/Coin'
+import Footer from './components/Footer/Footer'
 
 
 const App = () => {
@@ -15,7 +16,7 @@ const App = () => {
           <Route path='/Coin/' element={<Coin />} />
         </Routes>
       
-      
+      <Footer />
    
        
         

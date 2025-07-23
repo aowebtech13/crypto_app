@@ -77,3 +77,42 @@ h1{
     color: #fff;
     text-align: right;
 }
+.table-layout:last-child{
+    border: none;
+}
+.coin-image{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.coin-image img{
+    width: 30px;
+    height: 30px;
+}
+.market-cap{
+    color: #fff;
+    text-align: right;
+}
+@media (max-width: 768px) {
+    .table-layout{
+        grid-template-columns: 0.5fr 3fr 1fr 1fr;
+    }
+    .market-cap{
+        display: none;
+    }
+    
+}
+@media (max-width: 500px) {
+    .coin-image img{
+        gap: 5px;
+        height: 10px;
+        width: 15px;
+    }
+    .table-layout{
+        font-size: 13px;
+    }
+    .hero form input{
+        width: 100px;
+    }
+    
+}
