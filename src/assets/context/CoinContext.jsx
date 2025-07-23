@@ -32,9 +32,10 @@ import { createContext, useEffect, useState } from 'react';
 
     }
     return(
-        <CoinContext.Provider>
+        <CoinContext.Provider value={contextValue}>
             {props.children}
         </CoinContext.Provider>
+
     )
 }
 export default CoinContextProvider;

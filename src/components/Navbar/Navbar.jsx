@@ -7,36 +7,21 @@ import { CoinContext } from '../../assets/context/CoinContext' // Importing Coin
 
 
 const Navbar = () => {
+  
   const {setCurrency} = useContext(CoinContext); 
-  const handleCurrencyChange = (event) => {
-    switch(event.target.value) {
+  const currencyHandler = (event) => {
+    switch (event.target.value){
       case 'usd':
-        setCurrency({
-          name: 'usd',
-          symbol: '$',
-          sign: 'USD'
-        });
+        setCurrency('usd');
         break;
       case 'eur':
-        setCurrency({
-          name: 'eur',
-          symbol: '€',
-        
-        });
+        setCurrency('eur');
         break;
       case 'inr':
-        setCurrency({
-          name: 'inr',
-          symbol: '₹',
-        
-        });
+        setCurrency('inr');
         break;
       default:
-        setCurrency({
-          name: 'usd',
-          symbol: '$',
-        
-        });
+        setCurrency('usd');
     }
 
   }
